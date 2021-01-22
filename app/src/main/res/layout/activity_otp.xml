@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/White"
+    android:backgroundTint="@color/White"
+    >
+
+    <TextView
+        android:id="@+id/tvSendingOTP"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/sending_otp_to"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium"
+        android:padding="1dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349"
+        tools:ignore="MissingConstraints,RtlCompat"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Spinner
+        android:id="@+id/sCountryCodes"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvSendingOTP"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:background="@drawable/round_button_white_smoke"
+        app:layout_constraintStart_toStartOf="@+id/tvSendingOTP"
+        android:autofillHints="SelectCountryCode"
+        app:layout_constraintBottom_toBottomOf="@+id/etEnterName"
+        android:entries="@array/countryCodes"
+        android:outlineSpotShadowColor="@color/black"
+        android:scrollbarSize="@dimen/medium"
+
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/etEnterName"
+        android:layout_width="166dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/enter_your_number"
+        android:padding="1dp"
+        android:background="@drawable/round_button_white_smoke"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/sCountryCodes"
+        app:layout_constraintTop_toBottomOf="@+id/tvSendingOTP" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvSendingOTP"
+        app:layout_constraintStart_toEndOf="@+id/etEnterName"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_button_white_smoke"
+        app:layout_constraintBottom_toBottomOf="@+id/etEnterName"
+        android:textColor="@color/Purple"
+        android:text="Change"
+        android:backgroundTint="@color/White"
+        />
+      <EditText
+          android:id="@+id/etEnterOTP"
+          android:layout_width="match_parent"
+
+          android:layout_height="41dp"
+          android:hint="@string/enter_otp"
+          android:layout_marginTop="12dp"
+          android:layout_marginStart="30dp"
+          android:background="@drawable/round_button_white_smoke"
+          app:layout_constraintTop_toBottomOf="@+id/sCountryCodes"
+          app:layout_constraintStart_toStartOf="@+id/sCountryCodes"
+          android:layout_marginEnd="30dp"
+          tools:ignore="MissingConstraints,RtlCompat"
+          />
+
+    <Button
+        android:id="@+id/bConfrim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/Purple"
+        android:fontFamily="sans-serif-black"
+        android:text="Confirm"
+        android:onClick="clickFunction"
+        android:textColor="@color/White"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterOTP" />
+
+    <Button
+        android:id="@+id/bResendOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/White"
+        android:fontFamily="sans-serif-black"
+        android:text="Resend OTP"
+        android:textColor="@color/Purple"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bConfrim" />
+
+    <TextView
+        android:id="@+id/tvDidntGetOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/didnt_receive_OTP"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bResendOTP" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawableBottom="@color/WhiteSmoke"
+        android:drawableTop="@color/White"
+        android:drawablePadding="1dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvDidntGetOtp"
+        app:layout_constraintVertical_bias="0.106"
+        android:text="@string/request_otp_via_call"
+        android:textColor="@color/Purple"
+        android:backgroundTint="@color/White"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
