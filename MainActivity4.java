@@ -45,7 +45,7 @@ public class MainActivity4 extends AppCompatActivity {
         userList.add(new ModelClass(R.drawable.kagaznagarsaidownload,"Kagaznagar Sai"));
         userList.add(new ModelClass(R.drawable.anchorshiva,"Anchor Shiva"));
         userList.add(new ModelClass(R.drawable.sunsit,"Sacrificing Star"));
-        userList.add(new ModelClass(R.drawable.uppalbalu,"love de  balu"));
+        userList.add(new ModelClass(R.drawable.uppalbalu,"balu"));
         userList.add(new ModelClass(R.drawable.pittaladora,"pittala dora"));
         userList.add(new ModelClass(R.drawable.banjarahillsprasanth,"Banjara Hills Prasanth"));
         userList.add(new ModelClass(R.drawable.ayyagareno1jpg,"Ayyagare No1"));
