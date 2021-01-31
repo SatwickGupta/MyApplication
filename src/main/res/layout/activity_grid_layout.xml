@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/ic_master"
+            android:gravity="fill"
+            android:text="Quit Pannuda"
+            android:tag="quitpannuda"
+            android:onClick="playphrase"
+            />
+
+    <Button
+        android:id="@+id/btn2"
+        android:tag="mastertheblaster"
+        android:layout_rowWeight="1"
+        android:background="@drawable/ic_master"
+        android:layout_columnWeight="1"
+        android:gravity="fill"
+        android:onClick="playphrase"
+        android:text="Master The\n    Blaster" />
+        <Button
+            android:id="@+id/btn3"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="playphrase"
+            android:background="@drawable/ic_master"
+            android:gravity="fill"
+            android:text="kutti story"
+            android:tag="kuttistory"
+            />
+        <Button
+            android:id="@+id/btn4"
+           android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="playphrase"
+            android:gravity="fill"
+            android:background="@drawable/ic_master"
+            android:text="andha   kanna\n   paathaka"
+            android:tag="andhakannapaathaaka"
+            />
+
+
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

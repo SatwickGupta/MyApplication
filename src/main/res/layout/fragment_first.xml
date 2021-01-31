@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CardViewActivity">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="3"
+            android:columnCount="2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:id="@+id/ivWhatsapp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/ic_whatsapp"
+                        />
+                    <Button
+                        android:id="@+id/btnWhatsapp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:backgroundTint="@color/WhiteSmoke"
+                        android:text="Whatsapp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@+id/ivWhatsapp"
+                        app:layout_constraintStart_toStartOf="@+id/ivWhatsapp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:id="@+id/ivfacebook"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/ic_facebook"
+                        />
+                    <Button
+                        android:id="@+id/btnFaceBook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:backgroundTint="@color/WhiteSmoke"
+                        android:text="FaceBook"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@+id/ivfacebook"
+                        app:layout_constraintStart_toStartOf="@+id/ivfacebook"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:id="@+id/ivYoutube"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/ic_youtube"
+                        />
+                    <Button
+                        android:id="@+id/btnYoutube"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:backgroundTint="@color/WhiteSmoke"
+                        android:text="Youtube"
+
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@+id/ivYoutube"
+                        app:layout_constraintStart_toStartOf="@+id/ivYoutube"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:id="@+id/ivCalendar"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/ic_calendar"
+                        />
+                    <Button
+                        android:id="@+id/btnCalendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteSmoke"
+                        android:backgroundTint="@color/WhiteSmoke"
+                        android:text="Calendar"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@+id/ivCalendar"
+                        app:layout_constraintStart_toStartOf="@+id/ivCalendar"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calendar"
+                        app:layout_constraintTop_toBottomOf="@+id/ivCalendar"
+                        app:layout_constraintStart_toStartOf="@+id/ivCalendar"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
